@@ -1,0 +1,178 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Travel Adventures</title>
+  <style>
+    body{
+      margin:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background:#020c1b;
+      color:#f0f0f0;
+    }
+    header{
+      background:#0a192f;
+      padding:20px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    header h1{
+      margin:0;
+      font-size:28px;
+      color:#64ffda;
+    }
+    nav{
+      margin-top:10px;
+    }
+    nav a{
+      margin:0 15px;
+      color:#ccd6f6;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    .hero{
+      height:75vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      background:url('https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=1600') center/cover no-repeat;
+    }
+    .hero h2{
+      font-size:42px;
+      background:rgba(0,0,0,0.6);
+      padding:20px;
+      border-radius:8px;
+      color:#64ffda;
+    }
+    section{
+      padding:50px 20px;
+      max-width:1000px;
+      margin:auto;
+    }
+    h3{
+      color:#64ffda;
+      margin-bottom:15px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+    .card{
+      background:#0a192f;
+      border:1px solid #112240;
+      border-radius:10px;
+      padding:20px;
+      transition:transform 0.3s;
+    }
+    .card:hover{
+      transform:translateY(-5px);
+    }
+    .card img{
+      width:100%;
+      border-radius:8px;
+      height:160px;
+      object-fit:cover;
+    }
+    .card h4{
+      margin:12px 0 8px;
+      color:#fff;
+    }
+    button{
+      background:#64ffda;
+      border:none;
+      padding:10px 16px;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:bold;
+      margin-top:8px;
+    }
+    button:hover{
+      background:#52d1b0;
+    }
+    footer{
+      text-align:center;
+      background:#0a192f;
+      padding:20px;
+      margin-top:40px;
+      font-size:14px;
+      color:#8892b0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Space Travel Adventures</h1>
+    <nav>
+      <a href="#packages">Packages</a>
+      <a href="#mission">Mission</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>  <div class="hero">
+    <h2>Subashini Journey to the Stars Awaits ✨</h2>
+  </div>  <section id="packages">
+    <h3>Travel Packages</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=800" alt="Orbit">
+        <h4>Earth Orbit</h4>
+        <p>2-day trip around Earth. Price: $250,000</p>
+        <button onclick="bookTrip('Earth Orbit')">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517971071642-34a2d6c6f8b6?q=80&w=800" alt="Moon">
+        <h4>Moon Flyby</h4>
+        <p>5-day lunar journey. Price: $1,200,000</p>
+        <button onclick="bookTrip('Moon Flyby')">Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517971071642-34a2d6c6f8b6?q=80&w=800" alt="Mars">
+        <h4>Mars Preview</h4>
+        <p>7-day Mars orbit tour. Price: $2,500,000</p>
+        <button onclick="bookTrip('Mars Preview')">Book Now</button>
+      </div>
+    </div>
+  </section>  <section id="mission">
+    <h3>Our Mission</h3>
+    <p>Space Travel Adventures is a fictional company created as a portfolio project. Our goal is to inspire curiosity about space exploration and showcase how HTML, CSS, and JavaScript can bring creative concepts to life in a clean, responsive design.</p>
+  </section>  <section id="contact">
+    <h3>Subashini</h3>
+    <p>Email: <a href="your gmail.com">subashinisuba12012005gmail.com</a></p>
+    <p>Phone: <a href="Your number" target="_blank">9342202395</a></p>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <div>
+       <button onclick=" massage ()">Send</>
+      </div>
+         <p>Click the button to send alert
+message:      
+        <p>
+       <button onclick="show Alert()">Click!</
+button>
+
+   <script>
+function show Alert() {
+alert(" Thanks Subashini ! This dem des not send emails. To accept messages, connect a backender a form service (Formspree, Getform).");
+}
+   </script>
+          </form>
+  </section>
+  
+  <footer>
+    <p>© 2025 Space Travel Adventures | Built for Portfolio</p>
+  </footer>  <script>
+    function bookTrip(trip){
+      alert("Thank you! Your booking request for " + trip + " has been received. (Demo only)");
+    }
+  </script></body>
+</html>
